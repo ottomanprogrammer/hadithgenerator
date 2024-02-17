@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadith-Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hadith-app">
+            <span id="close" onclick="closeWindow()">&times;</span>
+            <h2><img src="images/praying.png">Hadith-Generator <img src="images/praying.png"></h2>
+            <div class="row">
+                <button onclick="fetchData()">Create</button>
+                <select id="sahih-selector">
+                    <option value="abudawud">Abu-Dawud</option>
+                    <option value="bukhari">Bukhari</option>
+                    <option value="muslim">Muslim</option>
+                </select>
+            </div>
+            <div class="hadith-container">
+                <span id="hadith-number"></span>
+                <span id="hadith-text" >Click Create to get your Hadith!</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
